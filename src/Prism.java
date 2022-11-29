@@ -9,6 +9,19 @@ public class Prism {
         this.height = height;
     }
 
+    public Prism(int lwh) {
+        length = lwh;
+        width = lwh;
+        height = lwh;
+    }
+
+    public Prism() {
+        int randNum = (int) (Math.random() * 91) + 10;
+        length = randNum;
+        width = randNum;
+        height = randNum;
+    }
+
     public void changeLength(int newLen) {
         length = newLen;
     }

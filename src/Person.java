@@ -3,9 +3,16 @@ public class Person {
     private String lastName;
     private String email;
 
+    public Person(String fName, String lName, String email) {
+        firstName = fName;
+        lastName = lName;
+        this.email = email;
+    }
+
     public Person(String fName, String lName) {
         firstName = fName;
         lastName = lName;
+        email = "";
     }
 
     public String getFirstName() {
