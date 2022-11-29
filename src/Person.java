@@ -23,4 +23,12 @@ public class Person {
     public void changeEmail(String newEmail) {
         newEmail = email;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void introduce() {
+        System.out.println("Hello, my name is " + getFirstName() + " " + getLastName());
+    }
 }
